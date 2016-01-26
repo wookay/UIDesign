@@ -14,19 +14,23 @@ public class WDesign {
     public init(view: UIView) {
         self.coordinator = WCoordinator(view: view)
     }
+    
+    public init() {
+        self.coordinator = WCoordinator()
+    }
 }
 
 
 extension WDesign {
     
     public func add_top_margin() -> WView {
-        let view = WView(frame: CGRect(origin: CGPointZero, size: CGSizeMake(0, top_margin)))
+        let view = WView(frame: CGRect(origin: CGPointZero, size: CGSizeMake(0, default_top_margin)))
         self.coordinator.add(view)
         return view
     }
     
-    public func add_spacing() -> WView {
-        let view = WView(frame: CGRect(origin: CGPointZero, size: CGSizeMake(0, vertical_spacing)))
+    public func add_spacing(spacing: CGFloat = default_vertical_spacing) -> WView {
+        let view = WView(frame: CGRect(origin: CGPointZero, size: CGSizeMake(0, spacing)))
         self.coordinator.add(view)
         return view
     }

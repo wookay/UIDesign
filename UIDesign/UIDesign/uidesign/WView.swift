@@ -20,3 +20,15 @@ public class WView: UIView, WPosition {
         super.init(coder: aDecoder)!
     }
 }
+
+extension WView {
+    public func design(realign realign: Bool = true, block: (WDesign)->Void) -> WView {
+        let d = WDesign()
+        d.coordinator.view = self
+        block(d)
+        if realign {
+            d.coordinator.realign()
+        }
+        return self
+    }
+}

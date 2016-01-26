@@ -9,10 +9,12 @@
 import UIKit
 
 extension UIViewController {
-    public func design(block: (WDesign)->Void) -> WView {
+    public func design(realign realign: Bool = true, block: (WDesign)->Void) -> WView {
         let d = WDesign(view: self.view)
         block(d)
-        d.coordinator.realign()
-        return d.coordinator.view
+        if realign {
+            d.coordinator.realign()
+        }
+        return d.coordinator.view!
     }
 }

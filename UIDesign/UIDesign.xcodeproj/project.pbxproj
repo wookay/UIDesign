@@ -7,20 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1C3CC7721C573A17004B0DFB /* defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3CC7661C573A17004B0DFB /* defaults.swift */; };
-		1C3CC7731C573A17004B0DFB /* WButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3CC7671C573A17004B0DFB /* WButton.swift */; };
-		1C3CC7741C573A17004B0DFB /* WCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3CC7681C573A17004B0DFB /* WCoordinator.swift */; };
-		1C3CC7751C573A17004B0DFB /* WDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3CC7691C573A17004B0DFB /* WDesign.swift */; };
-		1C3CC7761C573A17004B0DFB /* WLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3CC76A1C573A17004B0DFB /* WLabel.swift */; };
-		1C3CC7771C573A17004B0DFB /* WPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3CC76B1C573A17004B0DFB /* WPosition.swift */; };
-		1C3CC7781C573A17004B0DFB /* WRelative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3CC76C1C573A17004B0DFB /* WRelative.swift */; };
-		1C3CC7791C573A17004B0DFB /* WView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3CC76D1C573A17004B0DFB /* WView.swift */; };
-		1C3CC77A1C573A17004B0DFB /* WViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3CC76E1C573A17004B0DFB /* WViewController.swift */; };
-		1C3CC77B1C573A17004B0DFB /* device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3CC7701C573A17004B0DFB /* device.swift */; };
-		1C3CC77C1C573A17004B0DFB /* font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3CC7711C573A17004B0DFB /* font.swift */; };
 		1C6D64141C56E6290088335D /* UIDesign.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C6D64131C56E6290088335D /* UIDesign.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1C6D641B1C56E6290088335D /* UIDesign.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C6D64101C56E6290088335D /* UIDesign.framework */; };
 		1C6D64201C56E6290088335D /* UIDesignTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6D641F1C56E6290088335D /* UIDesignTests.swift */; };
+		1CB006E41C57AAFE00D59BDD /* defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB006DB1C57AAFE00D59BDD /* defaults.swift */; };
+		1CB006E51C57AAFE00D59BDD /* WButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB006DC1C57AAFE00D59BDD /* WButton.swift */; };
+		1CB006E61C57AAFE00D59BDD /* WCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB006DD1C57AAFE00D59BDD /* WCoordinator.swift */; };
+		1CB006E71C57AAFE00D59BDD /* WDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB006DE1C57AAFE00D59BDD /* WDesign.swift */; };
+		1CB006E81C57AAFE00D59BDD /* WLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB006DF1C57AAFE00D59BDD /* WLabel.swift */; };
+		1CB006E91C57AAFE00D59BDD /* WPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB006E01C57AAFE00D59BDD /* WPosition.swift */; };
+		1CB006EA1C57AAFE00D59BDD /* WRelative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB006E11C57AAFE00D59BDD /* WRelative.swift */; };
+		1CB006EB1C57AAFE00D59BDD /* WView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB006E21C57AAFE00D59BDD /* WView.swift */; };
+		1CB006EC1C57AAFE00D59BDD /* WViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB006E31C57AAFE00D59BDD /* WViewController.swift */; };
+		1CB006F21C57AB1700D59BDD /* device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB006EE1C57AB1700D59BDD /* device.swift */; };
+		1CB006F31C57AB1700D59BDD /* font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB006EF1C57AB1700D59BDD /* font.swift */; };
+		1CB006F41C57AB1700D59BDD /* geometric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB006F01C57AB1700D59BDD /* geometric.swift */; };
+		1CB006F51C57AB1700D59BDD /* inspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB006F11C57AB1700D59BDD /* inspectable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,23 +36,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1C3CC7661C573A17004B0DFB /* defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = defaults.swift; sourceTree = "<group>"; };
-		1C3CC7671C573A17004B0DFB /* WButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WButton.swift; sourceTree = "<group>"; };
-		1C3CC7681C573A17004B0DFB /* WCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCoordinator.swift; sourceTree = "<group>"; };
-		1C3CC7691C573A17004B0DFB /* WDesign.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WDesign.swift; sourceTree = "<group>"; };
-		1C3CC76A1C573A17004B0DFB /* WLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLabel.swift; sourceTree = "<group>"; };
-		1C3CC76B1C573A17004B0DFB /* WPosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WPosition.swift; sourceTree = "<group>"; };
-		1C3CC76C1C573A17004B0DFB /* WRelative.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRelative.swift; sourceTree = "<group>"; };
-		1C3CC76D1C573A17004B0DFB /* WView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WView.swift; sourceTree = "<group>"; };
-		1C3CC76E1C573A17004B0DFB /* WViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WViewController.swift; sourceTree = "<group>"; };
-		1C3CC7701C573A17004B0DFB /* device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = device.swift; sourceTree = "<group>"; };
-		1C3CC7711C573A17004B0DFB /* font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = font.swift; sourceTree = "<group>"; };
 		1C6D64101C56E6290088335D /* UIDesign.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIDesign.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C6D64131C56E6290088335D /* UIDesign.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIDesign.h; sourceTree = "<group>"; };
 		1C6D64151C56E6290088335D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C6D641A1C56E6290088335D /* UIDesignTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIDesignTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C6D641F1C56E6290088335D /* UIDesignTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDesignTests.swift; sourceTree = "<group>"; };
 		1C6D64211C56E6290088335D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CB006DB1C57AAFE00D59BDD /* defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = defaults.swift; sourceTree = "<group>"; };
+		1CB006DC1C57AAFE00D59BDD /* WButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WButton.swift; sourceTree = "<group>"; };
+		1CB006DD1C57AAFE00D59BDD /* WCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCoordinator.swift; sourceTree = "<group>"; };
+		1CB006DE1C57AAFE00D59BDD /* WDesign.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WDesign.swift; sourceTree = "<group>"; };
+		1CB006DF1C57AAFE00D59BDD /* WLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLabel.swift; sourceTree = "<group>"; };
+		1CB006E01C57AAFE00D59BDD /* WPosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WPosition.swift; sourceTree = "<group>"; };
+		1CB006E11C57AAFE00D59BDD /* WRelative.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRelative.swift; sourceTree = "<group>"; };
+		1CB006E21C57AAFE00D59BDD /* WView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WView.swift; sourceTree = "<group>"; };
+		1CB006E31C57AAFE00D59BDD /* WViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WViewController.swift; sourceTree = "<group>"; };
+		1CB006EE1C57AB1700D59BDD /* device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = device.swift; sourceTree = "<group>"; };
+		1CB006EF1C57AB1700D59BDD /* font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = font.swift; sourceTree = "<group>"; };
+		1CB006F01C57AB1700D59BDD /* geometric.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = geometric.swift; sourceTree = "<group>"; };
+		1CB006F11C57AB1700D59BDD /* inspectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = inspectable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,31 +76,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1C3CC7651C573A17004B0DFB /* uidesign */ = {
-			isa = PBXGroup;
-			children = (
-				1C3CC7661C573A17004B0DFB /* defaults.swift */,
-				1C3CC7671C573A17004B0DFB /* WButton.swift */,
-				1C3CC7681C573A17004B0DFB /* WCoordinator.swift */,
-				1C3CC7691C573A17004B0DFB /* WDesign.swift */,
-				1C3CC76A1C573A17004B0DFB /* WLabel.swift */,
-				1C3CC76B1C573A17004B0DFB /* WPosition.swift */,
-				1C3CC76C1C573A17004B0DFB /* WRelative.swift */,
-				1C3CC76D1C573A17004B0DFB /* WView.swift */,
-				1C3CC76E1C573A17004B0DFB /* WViewController.swift */,
-			);
-			path = uidesign;
-			sourceTree = "<group>";
-		};
-		1C3CC76F1C573A17004B0DFB /* uikit */ = {
-			isa = PBXGroup;
-			children = (
-				1C3CC7701C573A17004B0DFB /* device.swift */,
-				1C3CC7711C573A17004B0DFB /* font.swift */,
-			);
-			path = uikit;
-			sourceTree = "<group>";
-		};
 		1C6D64061C56E6290088335D = {
 			isa = PBXGroup;
 			children = (
@@ -118,8 +97,8 @@
 		1C6D64121C56E6290088335D /* UIDesign */ = {
 			isa = PBXGroup;
 			children = (
-				1C3CC7651C573A17004B0DFB /* uidesign */,
-				1C3CC76F1C573A17004B0DFB /* uikit */,
+				1CB006ED1C57AB1700D59BDD /* utils */,
+				1CB006DA1C57AAFE00D59BDD /* uidesign */,
 				1C6D64131C56E6290088335D /* UIDesign.h */,
 				1C6D64151C56E6290088335D /* Info.plist */,
 			);
@@ -133,6 +112,33 @@
 				1C6D64211C56E6290088335D /* Info.plist */,
 			);
 			path = UIDesignTests;
+			sourceTree = "<group>";
+		};
+		1CB006DA1C57AAFE00D59BDD /* uidesign */ = {
+			isa = PBXGroup;
+			children = (
+				1CB006DB1C57AAFE00D59BDD /* defaults.swift */,
+				1CB006DC1C57AAFE00D59BDD /* WButton.swift */,
+				1CB006DD1C57AAFE00D59BDD /* WCoordinator.swift */,
+				1CB006DE1C57AAFE00D59BDD /* WDesign.swift */,
+				1CB006DF1C57AAFE00D59BDD /* WLabel.swift */,
+				1CB006E01C57AAFE00D59BDD /* WPosition.swift */,
+				1CB006E11C57AAFE00D59BDD /* WRelative.swift */,
+				1CB006E21C57AAFE00D59BDD /* WView.swift */,
+				1CB006E31C57AAFE00D59BDD /* WViewController.swift */,
+			);
+			path = uidesign;
+			sourceTree = "<group>";
+		};
+		1CB006ED1C57AB1700D59BDD /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				1CB006EE1C57AB1700D59BDD /* device.swift */,
+				1CB006EF1C57AB1700D59BDD /* font.swift */,
+				1CB006F01C57AB1700D59BDD /* geometric.swift */,
+				1CB006F11C57AB1700D59BDD /* inspectable.swift */,
+			);
+			path = utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,17 +249,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C3CC77C1C573A17004B0DFB /* font.swift in Sources */,
-				1C3CC7791C573A17004B0DFB /* WView.swift in Sources */,
-				1C3CC77A1C573A17004B0DFB /* WViewController.swift in Sources */,
-				1C3CC7721C573A17004B0DFB /* defaults.swift in Sources */,
-				1C3CC7751C573A17004B0DFB /* WDesign.swift in Sources */,
-				1C3CC7771C573A17004B0DFB /* WPosition.swift in Sources */,
-				1C3CC77B1C573A17004B0DFB /* device.swift in Sources */,
-				1C3CC7761C573A17004B0DFB /* WLabel.swift in Sources */,
-				1C3CC7741C573A17004B0DFB /* WCoordinator.swift in Sources */,
-				1C3CC7781C573A17004B0DFB /* WRelative.swift in Sources */,
-				1C3CC7731C573A17004B0DFB /* WButton.swift in Sources */,
+				1CB006F31C57AB1700D59BDD /* font.swift in Sources */,
+				1CB006F51C57AB1700D59BDD /* inspectable.swift in Sources */,
+				1CB006E71C57AAFE00D59BDD /* WDesign.swift in Sources */,
+				1CB006E91C57AAFE00D59BDD /* WPosition.swift in Sources */,
+				1CB006E51C57AAFE00D59BDD /* WButton.swift in Sources */,
+				1CB006E41C57AAFE00D59BDD /* defaults.swift in Sources */,
+				1CB006F41C57AB1700D59BDD /* geometric.swift in Sources */,
+				1CB006EC1C57AAFE00D59BDD /* WViewController.swift in Sources */,
+				1CB006F21C57AB1700D59BDD /* device.swift in Sources */,
+				1CB006EA1C57AAFE00D59BDD /* WRelative.swift in Sources */,
+				1CB006EB1C57AAFE00D59BDD /* WView.swift in Sources */,
+				1CB006E81C57AAFE00D59BDD /* WLabel.swift in Sources */,
+				1CB006E61C57AAFE00D59BDD /* WCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,19 +1,19 @@
 //
-//  ViewController.swift
+//  InspectableViewController.swift
 //  Counter
 //
 //  Created by wookyoung on 1/26/16.
 //  Copyright © 2016 factorcat. All rights reserved.
 //
 
-import UIKit
+import Foundation
 import UIDesign
 
-class ViewController: UIViewController {
-
+class InspectableViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         let counter = design { ui in
             let label = ui.add_label("")
             var n = 0 {
@@ -27,29 +27,17 @@ class ViewController: UIViewController {
             n = 0
         }
         
-        let stack = design { ui in
-            let label = ui.add_label("")
-            var n = 0 {
-                didSet {
-                    label.text = String(n)
-                }
-            }
-            let push = ui.add_button("push") { n += 1 }
-            move(label, to: push.rightside)
-            n = 0
-        }
-        
         design { ui in
-            ui.add_spacing()
+            ui.add_spacing(60)
             ui.add_view(counter)
-            ui.add_spacing()
-            ui.add_view(stack)
+            
+            default_inspectable_view_backgroundColor = .cyanColor()
+            inspectable(counter)
         }
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 }

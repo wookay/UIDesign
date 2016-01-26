@@ -16,7 +16,7 @@ enum ViewType {
 
 
 class WCoordinator {
-    let view: WView
+    var view: WView? = nil
     
     init(view: UIView) {
         let w = WView(frame: view.frame)
@@ -24,21 +24,24 @@ class WCoordinator {
         view.addSubview(w)
     }
     
+    init() {
+    }
+    
     func add(sub: UIView) {
-        self.view.addSubview(sub)
+        self.view?.addSubview(sub)
     }
     
     func realign() {
         var bottom: CGPoint = CGPointZero
         
-        var origin = CGPointMake(side_spacing, side_spacing)
-        for subview: UIView in self.view.subviews {
+        var origin = CGPointMake(default_side_spacing, default_side_spacing)
+        for subview: UIView in self.view!.subviews {
             switch subview {
             case let w as WPosition:
                 if nil == w.relative {
                     let size = subview.frame.size
                     subview.frame = CGRect(origin: origin, size: size)
-                    origin.y += size.height + vertical_spacing
+                    origin.y += size.height + default_vertical_spacing
                     bottom.x = max(bottom.x, origin.x + size.width)
                     bottom.y = max(bottom.y, origin.y)
                 }
@@ -47,7 +50,7 @@ class WCoordinator {
             }
         }
         
-        for subview: UIView in self.view.subviews {
+        for subview: UIView in self.view!.subviews {
             switch subview {
             case let w as WPosition:
                 if nil != w.relative {
@@ -55,9 +58,9 @@ class WCoordinator {
                     var origin = relative.source.frame.origin
                     switch relative.side {
                     case .right:
-                        origin.x += relative.source.frame.width + side_spacing
+                        origin.x += relative.source.frame.width + default_side_spacing
                     default:
-                        origin.y += relative.source.frame.height + side_spacing
+                        origin.y += relative.source.frame.height + default_side_spacing
                     }
                     let size = subview.frame.size
                     subview.frame = CGRect(origin: origin, size: size)
@@ -69,17 +72,17 @@ class WCoordinator {
             }
         }
 
-        self.view.frame = CGRect(origin: CGPointMake(side_spacing, side_spacing),
-                                 size: CGSizeMake(bottom.x + side_spacing, bottom.y))
+        self.view?.frame = CGRect(origin: CGPointMake(default_side_spacing, default_side_spacing),
+                                 size: CGSizeMake(bottom.x + default_side_spacing, bottom.y))
     }
     
     func next_origin() -> CGPoint {
-        var origin = CGPointMake(side_spacing, side_spacing)
-        for subview: UIView in self.view.subviews {
+        var origin = CGPointMake(default_side_spacing, default_side_spacing)
+        for subview: UIView in self.view!.subviews {
             switch subview {
             case let w as WPosition:
                 if nil == w.relative {
-                    origin.y += subview.frame.height + vertical_spacing
+                    origin.y += subview.frame.height + default_vertical_spacing
                 }
             default:
                 break
