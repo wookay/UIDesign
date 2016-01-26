@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C1688271C57629E00A8905A /* UIDesign.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C3CC7621C573A06004B0DFB /* UIDesign.framework */; };
+		1C1688281C57629E00A8905A /* UIDesign.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1C3CC7621C573A06004B0DFB /* UIDesign.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1C6D64631C56E6950088335D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6D64621C56E6950088335D /* AppDelegate.swift */; };
 		1C6D64651C56E6950088335D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6D64641C56E6950088335D /* ViewController.swift */; };
 		1C6D64681C56E6950088335D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C6D64661C56E6950088335D /* Main.storyboard */; };
@@ -16,6 +18,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1C1688241C57629300A8905A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C3CC75C1C573A06004B0DFB /* UIDesign.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C6D640F1C56E6290088335D;
+			remoteInfo = UIDesign;
+		};
+		1C1688291C57629E00A8905A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C3CC75C1C573A06004B0DFB /* UIDesign.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C6D640F1C56E6290088335D;
+			remoteInfo = UIDesign;
+		};
 		1C3CC7611C573A06004B0DFB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1C3CC75C1C573A06004B0DFB /* UIDesign.xcodeproj */;
@@ -37,14 +53,21 @@
 			remoteGlobalIDString = 1C6D645E1C56E6950088335D;
 			remoteInfo = Counter;
 		};
-		1C9D30D21C57414300ABB034 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1C3CC75C1C573A06004B0DFB /* UIDesign.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 1C6D640F1C56E6290088335D;
-			remoteInfo = UIDesign;
-		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1C16882B1C57629E00A8905A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1C1688281C57629E00A8905A /* UIDesign.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1C3CC75C1C573A06004B0DFB /* UIDesign.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UIDesign.xcodeproj; path = ../../UIDesign/UIDesign.xcodeproj; sourceTree = "<group>"; };
@@ -65,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C1688271C57629E00A8905A /* UIDesign.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,11 +170,13 @@
 				1C6D645B1C56E6950088335D /* Sources */,
 				1C6D645C1C56E6950088335D /* Frameworks */,
 				1C6D645D1C56E6950088335D /* Resources */,
+				1C16882B1C57629E00A8905A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1C9D30D31C57414300ABB034 /* PBXTargetDependency */,
+				1C1688251C57629300A8905A /* PBXTargetDependency */,
+				1C16882A1C57629E00A8905A /* PBXTargetDependency */,
 			);
 			name = Counter;
 			productName = Counter;
@@ -277,15 +303,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1C1688251C57629300A8905A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UIDesign;
+			targetProxy = 1C1688241C57629300A8905A /* PBXContainerItemProxy */;
+		};
+		1C16882A1C57629E00A8905A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UIDesign;
+			targetProxy = 1C1688291C57629E00A8905A /* PBXContainerItemProxy */;
+		};
 		1C6D64751C56E6950088335D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1C6D645E1C56E6950088335D /* Counter */;
 			targetProxy = 1C6D64741C56E6950088335D /* PBXContainerItemProxy */;
-		};
-		1C9D30D31C57414300ABB034 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = UIDesign;
-			targetProxy = 1C9D30D21C57414300ABB034 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -396,6 +427,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = Counter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.factor.Counter;
@@ -407,6 +440,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = Counter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.factor.Counter;
