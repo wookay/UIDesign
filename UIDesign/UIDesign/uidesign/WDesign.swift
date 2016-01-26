@@ -16,6 +16,7 @@ public class WDesign {
     }
 }
 
+
 extension WDesign {
     
     public func add_top_margin() -> WView {
@@ -37,18 +38,13 @@ extension WDesign {
     
     public func add_label(text: String) -> WLabel {
         let label = WLabel(frame: self.coordinator.frame(.label))
-        label.textAlignment = .Center
         label.text = text
-        label.adjustsFontSizeToFitWidth = true
         self.coordinator.add(label)
         return label
     }
     
     public func add_button(title: String, touched: ()->Void) -> WButton {
         let button = WButton(frame: self.coordinator.frame(.button))
-        if isipad {
-            button.titleLabel!.font = UIFont(size: 50)
-        }
         button.setTitle(title, forState: .Normal)
         button.block_setAction(touched)
         self.coordinator.add(button)

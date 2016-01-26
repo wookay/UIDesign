@@ -15,10 +15,6 @@ enum ViewType {
 }
 
 
-let side_spacing: CGFloat = isipad ? 10 : 5
-let vertical_spacing: CGFloat = isipad ? 10 : 5
-let top_margin: CGFloat = isipad ? 50 : 10
-
 class WCoordinator {
     let view: WView
     

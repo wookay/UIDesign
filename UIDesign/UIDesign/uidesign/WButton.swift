@@ -13,9 +13,11 @@ public class WButton: UIButton, WPosition {
     
     required public override init(frame: CGRect) {
         super.init(frame: frame)
-        self.setTitleColor(.blackColor(), forState: .Normal)
-        self.setTitleColor(.greenColor(), forState: .Highlighted)
-        self.backgroundColor = default_button_backgroundColor
+        self.backgroundColor = default_button_backgroundColor_normal
+        self.titleLabel!.font = default_button_textLabel_font
+        self.setTitleColor(default_button_titleColor_normal, forState: .Normal)
+        self.setTitleColor(default_button_titleColor_highlighted, forState: .Highlighted)
+        self.titleLabel!.adjustsFontSizeToFitWidth = true
     }
     
     required public init(coder aDecoder: NSCoder) {
@@ -24,11 +26,15 @@ public class WButton: UIButton, WPosition {
     
     override public var highlighted: Bool {
         didSet {
-            backgroundColor = highlighted ? default_button_highlightedColor : default_button_backgroundColor
+            backgroundColor = highlighted ? default_button_backgroundColor_highlighted : default_button_backgroundColor_normal
         }
     }
 }
 
+
+
+// answered Nov 1 '15 at 11:44
+// http://stackoverflow.com/questions/24962151/hooking-up-uibutton-to-closure-swift-target-action/33461778#33461778
 
 var ActionBlockKey: UInt8 = 0
 

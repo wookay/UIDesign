@@ -14,6 +14,9 @@ public class WLabel: UILabel, WPosition {
     required public override init(frame: CGRect) {
         super.init(frame: frame)
         self.backgroundColor = default_label_backgroundColor
+        self.font = default_label_font
+        self.textAlignment = .Center
+        self.adjustsFontSizeToFitWidth = true
     }
     
     required public init(coder aDecoder: NSCoder) {
