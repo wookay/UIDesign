@@ -16,12 +16,12 @@ let default_top_margin: CGFloat = isipad ? 30 : 10
 
 
 // views
-let default_view_size   = isipad ? CGSizeMake(150, 80) : CGSizeMake(100, 50)
+let default_view_size = isipad ? CGSizeMake(150, 80) : CGSizeMake(100, 50)
 let default_view_backgroundColor = UIColor(white: 0.97, alpha: 0.9)
 
 
 // labels
-let default_label_size  = isipad ? CGSizeMake(150, 80) : CGSizeMake(100, 50)
+let default_label_size = isipad ? CGSizeMake(150, 80) : CGSizeMake(100, 50)
 let default_label_font = UIFont(size: isipad ? 30 : 18)
 let default_label_backgroundColor = UIColor(red: 0.95, green: 0.95, blue: 0.8, alpha: 1)
 
