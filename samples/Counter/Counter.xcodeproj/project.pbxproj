@@ -37,6 +37,13 @@
 			remoteGlobalIDString = 1C6D645E1C56E6950088335D;
 			remoteInfo = Counter;
 		};
+		1C9D30D21C57414300ABB034 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C3CC75C1C573A06004B0DFB /* UIDesign.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C6D640F1C56E6290088335D;
+			remoteInfo = UIDesign;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -143,6 +150,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				1C9D30D31C57414300ABB034 /* PBXTargetDependency */,
 			);
 			name = Counter;
 			productName = Counter;
@@ -273,6 +281,11 @@
 			isa = PBXTargetDependency;
 			target = 1C6D645E1C56E6950088335D /* Counter */;
 			targetProxy = 1C6D64741C56E6950088335D /* PBXContainerItemProxy */;
+		};
+		1C9D30D31C57414300ABB034 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UIDesign;
+			targetProxy = 1C9D30D21C57414300ABB034 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

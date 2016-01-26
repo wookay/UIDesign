@@ -39,6 +39,7 @@ extension WDesign {
         let label = WLabel(frame: self.coordinator.frame(.label))
         label.textAlignment = .Center
         label.text = text
+        label.adjustsFontSizeToFitWidth = true
         self.coordinator.add(label)
         return label
     }
