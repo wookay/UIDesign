@@ -53,8 +53,7 @@ class WCoordinator {
         for subview: UIView in self.view!.subviews {
             switch subview {
             case let w as WPosition:
-                if nil != w.relative {
-                    let relative = w.relative!
+                if let relative = w.relative {
                     var origin = relative.source.frame.origin
                     switch relative.side {
                     case .right:

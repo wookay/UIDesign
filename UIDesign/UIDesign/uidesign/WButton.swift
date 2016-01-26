@@ -33,7 +33,7 @@ public class WButton: UIButton, WPosition {
 
 
 
-// answered Nov 1 '15 at 11:44
+// from answered in stackoverflow
 // http://stackoverflow.com/questions/24962151/hooking-up-uibutton-to-closure-swift-target-action/33461778#33461778
 
 var ActionBlockKey: UInt8 = 0
