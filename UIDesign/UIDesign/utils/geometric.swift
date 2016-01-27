@@ -10,6 +10,10 @@ import UIKit
 
 
 // CGRect
+public func CGRectWith(rect: CGRect, origin: CGPoint) -> CGRect {
+    return CGRect(origin: origin, size: rect.size)
+}
+
 public func CGRectWith(size size: CGSize) -> CGRect {
     let origin = CGPointZero
     return CGRect(origin: origin, size: size)

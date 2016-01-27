@@ -18,6 +18,7 @@
 		1CB006FD1C57B3A700D59BDD /* SampleListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB006FB1C57B3A700D59BDD /* SampleListController.swift */; };
 		1CB006FE1C57B3A700D59BDD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB006FC1C57B3A700D59BDD /* ViewController.swift */; };
 		1CB007011C57B3F500D59BDD /* CounterAndStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB007001C57B3F500D59BDD /* CounterAndStackViewController.swift */; };
+		1CDC514F1C5862870043FAE3 /* SubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDC514E1C5862870043FAE3 /* SubViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		1CB006FB1C57B3A700D59BDD /* SampleListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleListController.swift; sourceTree = "<group>"; };
 		1CB006FC1C57B3A700D59BDD /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1CB007001C57B3F500D59BDD /* CounterAndStackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterAndStackViewController.swift; sourceTree = "<group>"; };
+		1CDC514E1C5862870043FAE3 /* SubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 				1CB006FC1C57B3A700D59BDD /* ViewController.swift */,
 				1CB007001C57B3F500D59BDD /* CounterAndStackViewController.swift */,
 				1C68B9B01C57B68600599B1E /* InspectableViewController.swift */,
+				1CDC514E1C5862870043FAE3 /* SubViewController.swift */,
 			);
 			path = viewcontrollers;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				1C68B9B11C57B68600599B1E /* InspectableViewController.swift in Sources */,
 				1CB006FE1C57B3A700D59BDD /* ViewController.swift in Sources */,
 				1C6D64631C56E6950088335D /* AppDelegate.swift in Sources */,
+				1CDC514F1C5862870043FAE3 /* SubViewController.swift in Sources */,
 				1CB007011C57B3F500D59BDD /* CounterAndStackViewController.swift in Sources */,
 				1CB006FD1C57B3A700D59BDD /* SampleListController.swift in Sources */,
 			);

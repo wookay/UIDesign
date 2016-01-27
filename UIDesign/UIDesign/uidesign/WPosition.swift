@@ -11,14 +11,3 @@ import UIKit
 public protocol WPosition {
     var relative: WRelative? { get set }
 }
-
-
-public func move(view: UIView, to: WRelative) {
-    switch view {
-    case var w as WPosition:
-        w.relative = to
-    default:
-        break
-    }
-}
-

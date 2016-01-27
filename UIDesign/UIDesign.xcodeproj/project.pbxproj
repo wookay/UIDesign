@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C5E60481C58665B006269A2 /* views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5E60471C58665B006269A2 /* views.swift */; };
 		1C6D64141C56E6290088335D /* UIDesign.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C6D64131C56E6290088335D /* UIDesign.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1C6D641B1C56E6290088335D /* UIDesign.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C6D64101C56E6290088335D /* UIDesign.framework */; };
 		1C6D64201C56E6290088335D /* UIDesignTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6D641F1C56E6290088335D /* UIDesignTests.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C5E60471C58665B006269A2 /* views.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = views.swift; sourceTree = "<group>"; };
 		1C6D64101C56E6290088335D /* UIDesign.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIDesign.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C6D64131C56E6290088335D /* UIDesign.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIDesign.h; sourceTree = "<group>"; };
 		1C6D64151C56E6290088335D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				1CB006EF1C57AB1700D59BDD /* font.swift */,
 				1CB006F01C57AB1700D59BDD /* geometric.swift */,
 				1CB006F11C57AB1700D59BDD /* inspectable.swift */,
+				1C5E60471C58665B006269A2 /* views.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				1CB006E41C57AAFE00D59BDD /* defaults.swift in Sources */,
 				1CB006F41C57AB1700D59BDD /* geometric.swift in Sources */,
 				1CB006EC1C57AAFE00D59BDD /* WViewController.swift in Sources */,
+				1C5E60481C58665B006269A2 /* views.swift in Sources */,
 				1CB006F21C57AB1700D59BDD /* device.swift in Sources */,
 				1CB006EA1C57AAFE00D59BDD /* WRelative.swift in Sources */,
 				1CB006EB1C57AAFE00D59BDD /* WView.swift in Sources */,

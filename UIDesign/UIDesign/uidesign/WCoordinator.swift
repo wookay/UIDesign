@@ -56,8 +56,12 @@ class WCoordinator {
                 if let relative = w.relative {
                     var origin = relative.source.frame.origin
                     switch relative.side {
-                    case .right:
+                    case .rightside:
                         origin.x += relative.source.frame.width + default_side_spacing
+                    case .upper:
+                        subview.superview!.staySubview(lower: relative.source, upper: subview)
+                    case .lower:
+                        subview.superview!.staySubview(lower: subview, upper: relative.source)
                     default:
                         origin.y += relative.source.frame.height + default_side_spacing
                     }

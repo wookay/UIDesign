@@ -15,6 +15,7 @@ class SampleListController: UITableViewController {
         ViewController.self,
         CounterAndStackViewController.self,
         InspectableViewController.self,
+        SubViewController.self,
     ]
 
     override func viewDidLoad() {
