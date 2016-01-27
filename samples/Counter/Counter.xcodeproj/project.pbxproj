@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C0574BD1C590FD20097C3FE /* MovableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0574BC1C590FD20097C3FE /* MovableViewController.swift */; };
+		1C0574C21C59360D0097C3FE /* ExchangeSubviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0574C11C59360D0097C3FE /* ExchangeSubviewController.swift */; };
 		1C1688271C57629E00A8905A /* UIDesign.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C3CC7621C573A06004B0DFB /* UIDesign.framework */; };
 		1C1688281C57629E00A8905A /* UIDesign.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1C3CC7621C573A06004B0DFB /* UIDesign.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1C68B9B11C57B68600599B1E /* InspectableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C68B9B01C57B68600599B1E /* InspectableViewController.swift */; };
@@ -18,7 +20,6 @@
 		1CB006FD1C57B3A700D59BDD /* SampleListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB006FB1C57B3A700D59BDD /* SampleListController.swift */; };
 		1CB006FE1C57B3A700D59BDD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB006FC1C57B3A700D59BDD /* ViewController.swift */; };
 		1CB007011C57B3F500D59BDD /* CounterAndStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB007001C57B3F500D59BDD /* CounterAndStackViewController.swift */; };
-		1CDC514F1C5862870043FAE3 /* SubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDC514E1C5862870043FAE3 /* SubViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1C0574BC1C590FD20097C3FE /* MovableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovableViewController.swift; sourceTree = "<group>"; };
+		1C0574C11C59360D0097C3FE /* ExchangeSubviewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExchangeSubviewController.swift; sourceTree = "<group>"; };
 		1C3CC75C1C573A06004B0DFB /* UIDesign.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UIDesign.xcodeproj; path = ../../UIDesign/UIDesign.xcodeproj; sourceTree = "<group>"; };
 		1C68B9B01C57B68600599B1E /* InspectableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InspectableViewController.swift; sourceTree = "<group>"; };
 		1C6D645F1C56E6950088335D /* Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Counter.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,7 +91,6 @@
 		1CB006FB1C57B3A700D59BDD /* SampleListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleListController.swift; sourceTree = "<group>"; };
 		1CB006FC1C57B3A700D59BDD /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1CB007001C57B3F500D59BDD /* CounterAndStackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterAndStackViewController.swift; sourceTree = "<group>"; };
-		1CDC514E1C5862870043FAE3 /* SubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,7 +173,8 @@
 				1CB006FC1C57B3A700D59BDD /* ViewController.swift */,
 				1CB007001C57B3F500D59BDD /* CounterAndStackViewController.swift */,
 				1C68B9B01C57B68600599B1E /* InspectableViewController.swift */,
-				1CDC514E1C5862870043FAE3 /* SubViewController.swift */,
+				1C0574BC1C590FD20097C3FE /* MovableViewController.swift */,
+				1C0574C11C59360D0097C3FE /* ExchangeSubviewController.swift */,
 			);
 			path = viewcontrollers;
 			sourceTree = "<group>";
@@ -315,11 +318,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C0574BD1C590FD20097C3FE /* MovableViewController.swift in Sources */,
 				1C68B9B11C57B68600599B1E /* InspectableViewController.swift in Sources */,
 				1CB006FE1C57B3A700D59BDD /* ViewController.swift in Sources */,
 				1C6D64631C56E6950088335D /* AppDelegate.swift in Sources */,
-				1CDC514F1C5862870043FAE3 /* SubViewController.swift in Sources */,
 				1CB007011C57B3F500D59BDD /* CounterAndStackViewController.swift in Sources */,
+				1C0574C21C59360D0097C3FE /* ExchangeSubviewController.swift in Sources */,
 				1CB006FD1C57B3A700D59BDD /* SampleListController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

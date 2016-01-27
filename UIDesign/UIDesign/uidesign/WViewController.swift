@@ -15,6 +15,6 @@ extension UIViewController {
         if realign {
             d.coordinator.realign()
         }
-        return d.coordinator.view!
+        return d.coordinator.source!
     }
 }

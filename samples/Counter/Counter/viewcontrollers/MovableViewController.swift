@@ -1,5 +1,5 @@
 //
-//  SubViewController.swift
+//  MovableViewController.swift
 //  Counter
 //
 //  Created by wookyoung on 1/27/16.
@@ -9,49 +9,36 @@
 import UIKit
 import UIDesign
 
-class SubViewController: UIViewController {
+class MovableViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let a = design { ui in
+
+        let counter = design { ui in
             let label = ui.add_label("")
             var n = 0 {
                 didSet {
                     label.text = String(n)
                 }
             }
-            
             let up = ui.add_button("up") { n += 1 }
             ui.add_button("down") { n -= 1 }
-            move(label, to: up.upper)
-            
+            move(label, to: up.rightside)
             n = 0
         }
-    
-        let b = design { ui in
-            let label = ui.add_label("")
-            var n = 0 {
-                didSet {
-                    label.text = String(n)
-                }
-            }
-            
-            ui.add_button("up") { n += 1 }
-            let down = ui.add_button("down") { n -= 1 }
-            move(label, to: down.upper)
-            
-            n = 0
-        }
-        
+
         design { ui in
             ui.add_spacing(60)
-            
-            ui.add_view(a)
-            ui.add_view(b)
-            
-            move(b, to: a.rightside)
+            ui.add_view(counter)
         }
+
+        default_inspectable_view_backgroundColor = .cyanColor()
+        let inspected = inspectable(counter)
+
+        movable(counter) {
+            inspected.update()
+        }
+
     }
     
     override func didReceiveMemoryWarning() {

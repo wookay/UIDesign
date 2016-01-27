@@ -14,8 +14,8 @@ struct Corner {
     var label_frame: CGRect
 }
 
-enum CornerType {
-    case topleft
+enum CornerType: Int {
+    case topleft = 1
     case topright
     case bottomleft
     case bottomright
@@ -45,17 +45,44 @@ func cornerof(view: WView, type: CornerType) -> Corner {
     return Corner(type: type, point: point, label_frame: CGRect(origin: label_origin, size: lsize))
 }
 
-public func inspectable(view: WView) {
-    let inspected = view.design(realign: false) { ui in
+public class WInspected {
+    let inspect: WView
+    let source: WView
+
+    public init(inspect: WView, source: WView) {
+        self.inspect = inspect
+        self.source = source
+    }
+    
+    public func update() {
+        for sub in self.inspect.subviews {
+            switch sub {
+            case let label as WLabel:
+                if let type = CornerType(rawValue: label.tag) {
+                    let corner = cornerof(self.source, type: type)
+                    label.text = String(corner.point)
+                }
+            default:
+                break
+            }
+        }
+    }
+}
+
+
+public func inspectable(view: WView) -> WInspected {
+    let inspect = view.design(realign: false) { ui in
         let corners: [Corner] = CornerType.cases.map{ type in cornerof(view, type: type) }
         for corner in corners {
             let label = ui.add_label(String(corner.point))
             label.backgroundColor = default_corner_label_backgroundColor
             label.font = default_corner_label_font
             label.frame = corner.label_frame
+            label.tag = corner.type.rawValue
         }
     }
     if let color = default_inspectable_view_backgroundColor {
-        inspected.backgroundColor = color
+        inspect.backgroundColor = color
     }
+    return WInspected(inspect: inspect, source: view)
 }

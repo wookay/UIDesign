@@ -15,7 +15,8 @@ class SampleListController: UITableViewController {
         ViewController.self,
         CounterAndStackViewController.self,
         InspectableViewController.self,
-        SubViewController.self,
+        MovableViewController.self,
+        ExchangeSubviewController.self,
     ]
 
     override func viewDidLoad() {
@@ -23,7 +24,7 @@ class SampleListController: UITableViewController {
         self.title = String(self.dynamicType)
 
         let cellIdentifier = "LabelCell"
-        self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier:cellIdentifier)
+        self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier:cellIdentifier)        
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -40,13 +41,16 @@ class SampleListController: UITableViewController {
         cell.accessoryType = .DisclosureIndicator
         return cell
     }
-    
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let type: UIViewController.Type = samples[indexPath.row]
-        let identifier = String(type)
+
+    func pushViewController(identifier: String) {
         let controller = self.storyboard!.instantiateViewControllerWithIdentifier(identifier)
         controller.title = identifier
         self.navigationController?.pushViewController(controller, animated: true)
+    }
+
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let type: UIViewController.Type = samples[indexPath.row]
+        pushViewController(String(type))
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
 }

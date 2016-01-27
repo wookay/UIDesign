@@ -24,6 +24,7 @@
 		1CB006F31C57AB1700D59BDD /* font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB006EF1C57AB1700D59BDD /* font.swift */; };
 		1CB006F41C57AB1700D59BDD /* geometric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB006F01C57AB1700D59BDD /* geometric.swift */; };
 		1CB006F51C57AB1700D59BDD /* inspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB006F11C57AB1700D59BDD /* inspectable.swift */; };
+		1CE65F4F1C590B81006C796B /* movable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE65F4E1C590B81006C796B /* movable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		1CB006EF1C57AB1700D59BDD /* font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = font.swift; sourceTree = "<group>"; };
 		1CB006F01C57AB1700D59BDD /* geometric.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = geometric.swift; sourceTree = "<group>"; };
 		1CB006F11C57AB1700D59BDD /* inspectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = inspectable.swift; sourceTree = "<group>"; };
+		1CE65F4E1C590B81006C796B /* movable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = movable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 				1CB006EF1C57AB1700D59BDD /* font.swift */,
 				1CB006F01C57AB1700D59BDD /* geometric.swift */,
 				1CB006F11C57AB1700D59BDD /* inspectable.swift */,
+				1CE65F4E1C590B81006C796B /* movable.swift */,
 				1C5E60471C58665B006269A2 /* views.swift */,
 			);
 			path = utils;
@@ -259,6 +262,7 @@
 				1CB006E51C57AAFE00D59BDD /* WButton.swift in Sources */,
 				1CB006E41C57AAFE00D59BDD /* defaults.swift in Sources */,
 				1CB006F41C57AB1700D59BDD /* geometric.swift in Sources */,
+				1CE65F4F1C590B81006C796B /* movable.swift in Sources */,
 				1CB006EC1C57AAFE00D59BDD /* WViewController.swift in Sources */,
 				1C5E60481C58665B006269A2 /* views.swift in Sources */,
 				1CB006F21C57AB1700D59BDD /* device.swift in Sources */,

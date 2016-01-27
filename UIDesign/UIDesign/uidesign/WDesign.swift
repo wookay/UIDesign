@@ -12,7 +12,7 @@ public class WDesign {
     let coordinator: WCoordinator
     
     public init(view: UIView) {
-        self.coordinator = WCoordinator(view: view)
+        self.coordinator = WCoordinator(source: view)
     }
     
     public init() {

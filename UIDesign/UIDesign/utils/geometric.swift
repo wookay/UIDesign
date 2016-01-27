@@ -24,3 +24,4 @@ public func CGRectWith(size size: CGSize) -> CGRect {
 public func CGPointOffset(point: CGPoint, x: CGFloat, y: CGFloat) -> CGPoint {
     return CGPointMake(point.x + x, point.y + y)
 }
+
